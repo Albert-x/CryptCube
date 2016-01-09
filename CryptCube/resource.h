@@ -360,6 +360,7 @@
 #define IDC_EDIT_HEX_UTF7               1030
 #define IDC_EPMY                        1030
 #define IDC_EDIT104                     1030
+#define IDC_EDIT_BASE64					1215
 #define IDC_STATICBMPSIZE               1031
 #define IDC_PMX1                        1031
 #define IDC_EDIT105                     1031

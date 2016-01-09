@@ -194,6 +194,7 @@ CString Text2Utf7(const CString &strText)
 CString Text2Base64(const CString &strText)
 {
 	const char EncodeTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+	CStringW strTextW = CStrT2CStrW(strText);
 	CString strResultB;
 	int strTextLenth = strText.GetLength();
 	unsigned char Tmp[4] = { 0 };

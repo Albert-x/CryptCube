@@ -60,7 +60,7 @@ BEGIN_MESSAGE_MAP(CCodeStringForm, CForm)
 	ON_EN_CHANGE(IDC_EDIT_HEX_UNIBIGEND, &CCodeStringForm::OnEnChangeEditHexUnibigend)
 	ON_EN_CHANGE(IDC_EDIT_HEX_UTF8, &CCodeStringForm::OnEnChangeEditHexUtf8)
 	ON_EN_CHANGE(IDC_EDIT_HEX_UTF7, &CCodeStringForm::OnEnChangeEditHexUtf7)
-	//ON_EN_CHANGE(IDC_EDIT_BASE64, &CCodeStringForm::OnEnChangeEditHexUtf7)
+	ON_EN_CHANGE(IDC_EDIT_BASE64, &CCodeStringForm::OnEnChangeEditHexUtf7)
 END_MESSAGE_MAP()
 
 
