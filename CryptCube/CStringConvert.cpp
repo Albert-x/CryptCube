@@ -191,6 +191,46 @@ CString Text2Utf7(const CString &strText)
 	return CStrA2CStrT(strResultA);
 }
 
+CString Text2Base64(const CString &strText)
+{
+	const char EncodeTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+	CString strResultB;
+	int strTextLenth = strText.GetLength();
+	unsigned char Tmp[4] = { 0 };
+	int Length = 0, count = 0;
+	for (int i = 0; i<(int)(strTextLenth / 3); i++)
+	{
+		Tmp[1] = strText[Length++];
+		Tmp[2] = strText[Length++];
+		Tmp[3] = strText[Length++];
+		strResultB += EncodeTable[Tmp[1] >> 2];
+		strResultB += EncodeTable[((Tmp[1] << 4) | (Tmp[2] >> 4)) & 0x3F];
+		strResultB += EncodeTable[((Tmp[2] << 2) | (Tmp[3] >> 6)) & 0x3F];
+		strResultB += EncodeTable[Tmp[3] & 0x3F];
+		if (count += 4, count == 76) { strResultB += "\r\n"; count = 0; }
+	}
+
+	int Mod = strTextLenth % 3;
+	if (Mod == 1)
+	{
+		Tmp[1] = strText[Length++];
+		strResultB += EncodeTable[Tmp[1] >> 2];
+		strResultB += EncodeTable[(Tmp[1] << 4) & 0x30];
+		strResultB += "==";
+	}
+	else if (Mod == 2)
+	{
+		Tmp[1] = strText[Length++];
+		Tmp[2] = strText[Length++];
+		strResultB += EncodeTable[Tmp[1] >> 2];
+		strResultB += EncodeTable[((Tmp[1] << 4) | (Tmp[2] >> 4)) & 0x3F];
+		strResultB += EncodeTable[(Tmp[2] << 2) & 0x3C];
+		strResultB += "=";
+	}
+	return strResultB;
+}
+
+
 
 ///////////////////////////////////////////////////////////////////////////////
 // 十六进制编码转换为Text
@@ -261,6 +301,10 @@ CString Utf72Text(const CString &strHex)
 	return strHex;
 }
 
+CString Base642Text(const CString &strAscii)
+{
+	return strAscii;
+}
 
 
 ///////////////////////////////////////////////////////////////////////////////

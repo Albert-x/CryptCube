@@ -18,6 +18,7 @@ CCodeStringForm::CCodeStringForm()
 	, m_strHexUniBigEnd(_T(""))
 	, m_strHexUTF8(_T(""))
 	, m_strHexUTF7(_T(""))
+	, m_strBase64(_T(""))
 {
 
 }
@@ -41,12 +42,14 @@ void CCodeStringForm::DoDataExchange(CDataExchange* pDX)
 	//DDV_MaxChars(pDX, m_strHexUTF8, 6000);
 	DDX_Text(pDX, IDC_EDIT_HEX_UTF7, m_strHexUTF7);
 	//DDV_MaxChars(pDX, m_strHexUTF7, 10000);
+	DDX_Text(pDX, IDC_EDIT_BASE64, m_strBase64);
 	DDX_Control(pDX, IDC_EDIT_STRING_NORMAL, m_editNormal);
 	DDX_Control(pDX, IDC_EDIT_HEX_ANSI, m_editHexAnsi);
 	DDX_Control(pDX, IDC_EDIT_HEX_UNICODE, m_editHexUnicode);
 	DDX_Control(pDX, IDC_EDIT_HEX_UNIBIGEND, m_editHexUniBigEnd);
 	DDX_Control(pDX, IDC_EDIT_HEX_UTF8, m_editHexUTF8);
 	DDX_Control(pDX, IDC_EDIT_HEX_UTF7, m_editHexUTF7);
+	DDX_Control(pDX, IDC_EDIT_BASE64, m_editBase64);
 }
 
 BEGIN_MESSAGE_MAP(CCodeStringForm, CForm)
@@ -57,6 +60,7 @@ BEGIN_MESSAGE_MAP(CCodeStringForm, CForm)
 	ON_EN_CHANGE(IDC_EDIT_HEX_UNIBIGEND, &CCodeStringForm::OnEnChangeEditHexUnibigend)
 	ON_EN_CHANGE(IDC_EDIT_HEX_UTF8, &CCodeStringForm::OnEnChangeEditHexUtf8)
 	ON_EN_CHANGE(IDC_EDIT_HEX_UTF7, &CCodeStringForm::OnEnChangeEditHexUtf7)
+	ON_EN_CHANGE(IDC_EDIT_BASE64, &CCodeStringForm::OnEnChangeEditHexUtf7)
 END_MESSAGE_MAP()
 
 
@@ -204,6 +208,27 @@ void CCodeStringForm::OnEnChangeEditHexUtf7()
 		return;
 	}
 	m_strNormal = Utf72Text(m_strHexUTF7);
+
+	UpdateData(FALSE);
+
+	OnEnChangeEditStringNormal();
+
+}
+
+void CCodeStringForm::OnEnChangeEditBase64()
+{
+	UpdateData();
+
+	//¹ýÂËÊäÈëµÄ×Ö·û
+	int nCheckHex = CStrCheckHex(m_strHexUTF7);
+	if (-1 != nCheckHex)
+	{
+		m_strBase64.Delete(nCheckHex);
+		m_editBase64.SetWindowText(m_strHexUTF7);
+		m_editBase64.SetSel(nCheckHex, nCheckHex, TRUE);
+		return;
+	}
+	m_strNormal = Base642Text(m_strBase64);
 
 	UpdateData(FALSE);
 

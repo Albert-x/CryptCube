@@ -38,12 +38,15 @@ public:
 	CString m_strHexUTF8;
 	// 存储UTF7编码方式的十六进制字符串
 	CString m_strHexUTF7;
+	// 储存Base64编码方式的ASCII字符串
+	CString m_strBase64;
 	afx_msg void OnEnChangeEditStringNormal();
 	afx_msg void OnEnChangeEditHexAnsi();
 	afx_msg void OnEnChangeEditHexUnicode();
 	afx_msg void OnEnChangeEditHexUnibigend();
 	afx_msg void OnEnChangeEditHexUtf8();
 	afx_msg void OnEnChangeEditHexUtf7();
+	afx_msg void OnEnChangeEditBase64();
 	// 待转换的文本框
 	CEdit m_editNormal;
 	// ansi码的文本框
@@ -56,6 +59,8 @@ public:
 	CEdit m_editHexUTF8;
 	// UTF7的文本框
 	CEdit m_editHexUTF7;
+	// Base64的文本框
+	CEdit m_editBase64;
 };
 
 

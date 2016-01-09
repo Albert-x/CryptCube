@@ -140,3 +140,7 @@ CString GetFileHashMD2(CString strFilePath);
 CString GetFileHashSHA1(CString strFilePath);
 CString GetFileHashSHA(CString strFilePath);
 //CString GetFileHashSHA512(CString strFilePath);
+
+//¶Ô×Ö·û´®½øÐÐBase64±àÂë
+CString Text2Base64(const CString &strText);
+CString Base642Text(const CString &strAscii);
