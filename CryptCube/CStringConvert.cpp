@@ -194,16 +194,22 @@ CString Text2Utf7(const CString &strText)
 CString Text2Base64(const CString &strText)
 {
 	const char EncodeTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+	//CString strTextA = Text2Utf8(strText);
 	CStringW strTextW = CStrT2CStrW(strText);
 	CString strResultB;
-	int strTextLenth = strText.GetLength();
+	int strTextLenth = WideCharToMultiByte(CP_UTF8, 0, LPCWSTR(strTextW), -1, NULL, 0, NULL, NULL);
+	//int strTextLenth = strTextA.GetLength();
+	char *str = new char[strTextLenth];
+	memset(str, 0, strTextLenth);
+	WideCharToMultiByte(CP_UTF8, 0, LPCWSTR(strTextW), -1, str, strTextLenth, NULL, NULL);
+	strTextLenth = strlen(str);
 	unsigned char Tmp[4] = { 0 };
 	int Length = 0, count = 0;
 	for (int i = 0; i<(int)(strTextLenth / 3); i++)
 	{
-		Tmp[1] = strText[Length++];
-		Tmp[2] = strText[Length++];
-		Tmp[3] = strText[Length++];
+		Tmp[1] = str[Length++];
+		Tmp[2] = str[Length++];
+		Tmp[3] = str[Length++];
 		strResultB += EncodeTable[Tmp[1] >> 2];
 		strResultB += EncodeTable[((Tmp[1] << 4) | (Tmp[2] >> 4)) & 0x3F];
 		strResultB += EncodeTable[((Tmp[2] << 2) | (Tmp[3] >> 6)) & 0x3F];
@@ -214,15 +220,15 @@ CString Text2Base64(const CString &strText)
 	int Mod = strTextLenth % 3;
 	if (Mod == 1)
 	{
-		Tmp[1] = strText[Length++];
+		Tmp[1] = str[Length++];
 		strResultB += EncodeTable[Tmp[1] >> 2];
 		strResultB += EncodeTable[(Tmp[1] << 4) & 0x30];
 		strResultB += "==";
 	}
 	else if (Mod == 2)
 	{
-		Tmp[1] = strText[Length++];
-		Tmp[2] = strText[Length++];
+		Tmp[1] = str[Length++];
+		Tmp[2] = str[Length++];
 		strResultB += EncodeTable[Tmp[1] >> 2];
 		strResultB += EncodeTable[((Tmp[1] << 4) | (Tmp[2] >> 4)) & 0x3F];
 		strResultB += EncodeTable[(Tmp[2] << 2) & 0x3C];
