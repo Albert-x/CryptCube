@@ -60,7 +60,7 @@ BEGIN_MESSAGE_MAP(CCodeStringForm, CForm)
 	ON_EN_CHANGE(IDC_EDIT_HEX_UNIBIGEND, &CCodeStringForm::OnEnChangeEditHexUnibigend)
 	ON_EN_CHANGE(IDC_EDIT_HEX_UTF8, &CCodeStringForm::OnEnChangeEditHexUtf8)
 	ON_EN_CHANGE(IDC_EDIT_HEX_UTF7, &CCodeStringForm::OnEnChangeEditHexUtf7)
-	ON_EN_CHANGE(IDC_EDIT_BASE64, &CCodeStringForm::OnEnChangeEditHexUtf7)
+	//ON_EN_CHANGE(IDC_EDIT_BASE64, &CCodeStringForm::OnEnChangeEditHexUtf7)
 END_MESSAGE_MAP()
 
 
@@ -103,6 +103,9 @@ void CCodeStringForm::OnEnChangeEditStringNormal()
 
 	//计算UTF7方式的十六进制编码
 	m_strHexUTF7 = Text2Utf7(m_strNormal);
+
+	//计算BASE64方式的编码
+	m_strBase64 = Text2Base64(m_strNormal);
 
 	//把成员变量的值赋给控件
 	UpdateData(FALSE);
@@ -220,11 +223,11 @@ void CCodeStringForm::OnEnChangeEditBase64()
 	UpdateData();
 
 	//过滤输入的字符
-	int nCheckHex = CStrCheckHex(m_strHexUTF7);
+	int nCheckHex = CStrCheckHex(m_strBase64);
 	if (-1 != nCheckHex)
 	{
 		m_strBase64.Delete(nCheckHex);
-		m_editBase64.SetWindowText(m_strHexUTF7);
+		m_editBase64.SetWindowText(m_strBase64);
 		m_editBase64.SetSel(nCheckHex, nCheckHex, TRUE);
 		return;
 	}

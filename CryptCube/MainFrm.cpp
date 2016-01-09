@@ -1004,7 +1004,7 @@ void CMainFrame::OnCodeHash()
 
 void CMainFrame::OnCodeString()
 {
-	m_wndStatusBar.SetInformation(_T("将字符串解码为不同编码方式的十六进制数据"));
+	m_wndStatusBar.SetInformation(_T("将字符串用不同的方式编码以十六进制显示"));
 	SwitchToForm(IDD_CODE_STRING);
 }
 
