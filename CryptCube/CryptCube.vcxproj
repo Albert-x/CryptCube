@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{91374184-2E3B-4253-87EF-0588B01B4F06}</ProjectGuid>
+    <RootNamespace>CryptTool</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BookLesson.h" />
+    <ClInclude Include="CryptCube.h" />
+    <ClInclude Include="CryptCubeDoc.h" />
+    <ClInclude Include="Dictionary.h" />
+    <ClInclude Include="Euclid.h" />
+    <ClInclude Include="Execise.h" />
+    <ClInclude Include="Flash.h" />
+    <ClInclude Include="FlashAes.h" />
+    <ClInclude Include="FlashAffine.h" />
+    <ClInclude Include="FlashCarsa.h" />
+    <ClInclude Include="FlashDes.h" />
+    <ClInclude Include="FlashDiff.h" />
+    <ClInclude Include="FlashDsa.h" />
+    <ClInclude Include="FlashEcc.h" />
+    <ClInclude Include="FlashElg.h" />
+    <ClInclude Include="FlashHmac.h" />
+    <ClInclude Include="FlashIdea.h" />
+    <ClInclude Include="FlashMd5.h" />
+    <ClInclude Include="FlashPgp.h" />
+    <ClInclude Include="FlashRc4.h" />
+    <ClInclude Include="FlashSha.h" />
+    <ClInclude Include="FlsahRsa.h" />
+    <ClInclude Include="FouDIG.h" />
+    <ClInclude Include="GF.h" />
+    <ClInclude Include="HashSHA1.h" />
+    <ClInclude Include="hashsha1key.h" />
+    <ClInclude Include="hashsha1lun.h" />
+    <ClInclude Include="hashsha1sum.h" />
+    <ClInclude Include="HashSum.h" />
+    <ClInclude Include="HighEfs.h" />
+    <ClInclude Include="HighFile.h" />
+    <ClInclude Include="HighKer.h" />
+    <ClInclude Include="HighKerber.h" />
+    <ClInclude Include="HighOpen.h" />
+    <ClInclude Include="HighPgp.h" />
+    <ClInclude Include="HighPki.h" />
+    <ClInclude Include="HighSSL.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="QUICK_MOD.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SelectTerm.h" />
+    <ClInclude Include="shockwaveflash1.h" />
+    <ClInclude Include="SkinH.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestDes.h" />
+    <ClInclude Include="TestDiff.h" />
+    <ClInclude Include="TestDsa.h" />
+    <ClInclude Include="TestHmac.h" />
+    <ClInclude Include="TestMd5.h" />
+    <ClInclude Include="TestSsl.h" />
+    <ClInclude Include="Theory.h" />
+    <ClInclude Include="WeiClass.h" />
+    <ClInclude Include="XTIME.h" />
+    <ClInclude Include="BlockAESForm.h" />
+    <ClInclude Include="BlockDESForm.h" />
+    <ClInclude Include="BlockIDEAForm.h" />
+    <ClInclude Include="ClassicDaihuanForm.h" />
+    <ClInclude Include="ClassicKaisaForm.h" />
+    <ClInclude Include="CodeBase64Form.h" />
+    <ClInclude Include="CodeCalcForm.h" />
+    <ClInclude Include="CodeColorForm.h" />
+    <ClInclude Include="CodeHashForm.h" />
+    <ClInclude Include="CodeQrForm.h" />
+    <ClInclude Include="CodeRandomForm.h" />
+    <ClInclude Include="CodeStringForm.h" />
+    <ClInclude Include="CodeUrlForm.h" />
+    <ClInclude Include="CryptCubeForm.h" />
+    <ClInclude Include="EncryptFileForm.h" />
+    <ClInclude Include="EncryptStringForm.h" />
+    <ClInclude Include="Form.h" />
+    <ClInclude Include="HashMD5Form.h" />
+    <ClInclude Include="HashSHAForm.h" />
+    <ClInclude Include="HelpForm.h" />
+    <ClInclude Include="PublicKeyDHForm.h" />
+    <ClInclude Include="PublicKeyECCForm.h" />
+    <ClInclude Include="PublicKeyElGamalForm.h" />
+    <ClInclude Include="PublicKeyRSAForm.h" />
+    <ClInclude Include="SignatureDSAForm.h" />
+    <ClInclude Include="StreamRC4Form.h" />
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="BlockAESDialogChushi.h" />
+    <ClInclude Include="BlockAESDialogKey.h" />
+    <ClInclude Include="BlockAESDialogLun.h" />
+    <ClInclude Include="BlockAESDialogZuihou.h" />
+    <ClInclude Include="BlockIDEADialogKey.h" />
+    <ClInclude Include="BlockIDEADialogLun.h" />
+    <ClInclude Include="BlockIDEADialogZuihou.h" />
+    <ClInclude Include="Dialog.h" />
+    <ClInclude Include="StreamRC4DialogList.h" />
+    <ClInclude Include="StreamRC4DialogText.h" />
+    <ClInclude Include="RibbonBar.h" />
+    <ClInclude Include="RibbonButton.h" />
+    <ClInclude Include="CryptoAPIHash.h" />
+    <ClInclude Include="CStringConvert.h" />
+    <ClInclude Include="QRCodeEncode.h" />
+    <ClInclude Include="BlockAES.h" />
+    <ClInclude Include="BlockDES.h" />
+    <ClInclude Include="BlockIDEA.h" />
+    <ClInclude Include="ClassicDaihuan.h" />
+    <ClInclude Include="ClassicKaisa.h" />
+    <ClInclude Include="HashMD5.h" />
+    <ClInclude Include="PublicKeyECC.h" />
+    <ClInclude Include="PublicKeyElGamal.h" />
+    <ClInclude Include="PublicKeyRSA.h" />
+    <ClInclude Include="StreamRC4.h" />
+    <ClInclude Include="CustomButton.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\IDEA\IDEA1.png" />
+    <None Include="res\IDEA\IDEA2.png" />
+    <None Include="res\menu\main.png" />
+    <None Include="res\menu\menu.png" />
+    <None Include="res\Toolbar2\Toolbar2.png" />
+    <None Include="res\Toolbar\Toolbar.png" />
+    <None Include="res\toolbar\toolbar1.bmp" />
+    <None Include="res\优秀作品\present.png" />
+    <None Include="res\参考资料\book.bmp" />
+    <None Include="res\可汗学院\khan图标_副本.png" />
+    <None Include="res\可汗学院\可汗&amp;资料.png" />
+    <None Include="res\高级\6.png" />
+    <None Include="res\高级\high.png" />
+    <None Include="res\background.png" />
+    <None Include="res\密码术语\booklet.png" />
+    <None Include="res\CryptCube.ico" />
+    <None Include="res\CryptCube.rc2" />
+    <None Include="res\CryptCubeDoc.ico" />
+    <None Include="res\高级应用\ecel1.bmp" />
+    <None Include="res\高级应用\ecel2.bmp" />
+    <None Include="res\flash.bmp" />
+    <None Include="res\help.png" />
+    <None Include="res\helpsmall.png" />
+    <None Include="res\IDEA1.png" />
+    <None Include="res\IDEA2.png" />
+    <None Include="res\可汗学院\khan图标.png" />
+    <None Include="res\main.png" />
+    <None Include="res\menu.png" />
+    <None Include="res\Toolbar.png" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="res\toolbar2.bmp" />
+    <None Include="res\Toolbar2.png" />
+    <None Include="res\算法原理\toolbar3.png" />
+    <None Include="res\website.bmp" />
+    <None Include="res\习题测试\习题.png" />
+    <None Include="res\参考资料\参考.png" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="FlashIdea.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="FlashRsa.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Readme.txt" />
+    <None Include="res\高级应用\EFS1.bmp" />
+    <None Include="res\高级应用\EFS2.bmp" />
+    <None Include="res\高级应用\EFS3.bmp" />
+    <None Include="res\高级应用\EFS4.bmp" />
+    <None Include="res\高级应用\EFS5.bmp" />
+    <None Include="res\高级应用\ss1.bmp" />
+    <None Include="res\高级应用\ss2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CryptCube.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BookLesson.cpp" />
+    <ClCompile Include="CryptCube.cpp" />
+    <ClCompile Include="CryptCubeDoc.cpp" />
+    <ClCompile Include="CustomButton.cpp" />
+    <ClCompile Include="Euclid.cpp" />
+    <ClCompile Include="Execise.cpp" />
+    <ClCompile Include="FlashAes.cpp" />
+    <ClCompile Include="FlashAffine.cpp" />
+    <ClCompile Include="FlashCarsa.cpp" />
+    <ClCompile Include="FlashDes.cpp" />
+    <ClCompile Include="FlashDiff.cpp" />
+    <ClCompile Include="FlashDsa.cpp" />
+    <ClCompile Include="FlashEcc.cpp" />
+    <ClCompile Include="FlashElg.cpp" />
+    <ClCompile Include="FlashHmac.cpp" />
+    <ClCompile Include="FlashIdea.cpp" />
+    <ClCompile Include="FlashMd5.cpp" />
+    <ClCompile Include="FlashPgp.cpp" />
+    <ClCompile Include="FlashRc4.cpp" />
+    <ClCompile Include="FlashSha.cpp" />
+    <ClCompile Include="FlsahRsa.cpp" />
+    <ClCompile Include="FouDIG.cpp" />
+    <ClCompile Include="GF.cpp" />
+    <ClCompile Include="HashSHA1.cpp" />
+    <ClCompile Include="hashsha1key.cpp" />
+    <ClCompile Include="hashsha1lun.cpp" />
+    <ClCompile Include="hashsha1sum.cpp" />
+    <ClCompile Include="HashSum.cpp" />
+    <ClCompile Include="HighEfs.cpp" />
+    <ClCompile Include="HighFile.cpp" />
+    <ClCompile Include="HighKer.cpp" />
+    <ClCompile Include="HighKerber.cpp" />
+    <ClCompile Include="HighOpen.cpp" />
+    <ClCompile Include="HighPgp.cpp" />
+    <ClCompile Include="HighPki.cpp" />
+    <ClCompile Include="HighSSL.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="QUICK_MOD.cpp" />
+    <ClCompile Include="SelectTerm.cpp" />
+    <ClCompile Include="shockwaveflash1.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TestDes.cpp" />
+    <ClCompile Include="TestDiff.cpp" />
+    <ClCompile Include="TestDsa.cpp" />
+    <ClCompile Include="TestHmac.cpp" />
+    <ClCompile Include="TestMd5.cpp" />
+    <ClCompile Include="TestSsl.cpp" />
+    <ClCompile Include="Theory.cpp" />
+    <ClCompile Include="WeiClass.cpp" />
+    <ClCompile Include="winmain.cpp" />
+    <ClCompile Include="XTIME.cpp" />
+    <ClCompile Include="BlockAESForm.cpp" />
+    <ClCompile Include="BlockDESForm.cpp" />
+    <ClCompile Include="BlockIDEAForm.cpp" />
+    <ClCompile Include="ClassicDaihuanForm.cpp" />
+    <ClCompile Include="ClassicKaisaForm.cpp" />
+    <ClCompile Include="CodeBase64Form.cpp" />
+    <ClCompile Include="CodeCalcForm.cpp" />
+    <ClCompile Include="CodeColorForm.cpp" />
+    <ClCompile Include="CodeHashForm.cpp" />
+    <ClCompile Include="CodeQrForm.cpp" />
+    <ClCompile Include="CodeRandomForm.cpp" />
+    <ClCompile Include="CodeStringForm.cpp" />
+    <ClCompile Include="CodeUrlForm.cpp" />
+    <ClCompile Include="CryptCubeForm.cpp" />
+    <ClCompile Include="EncryptFileForm.cpp" />
+    <ClCompile Include="EncryptStringForm.cpp" />
+    <ClCompile Include="Form.cpp" />
+    <ClCompile Include="HashMD5Form.cpp" />
+    <ClCompile Include="HashSHAForm.cpp" />
+    <ClCompile Include="HelpForm.cpp" />
+    <ClCompile Include="PublicKeyDHForm.cpp" />
+    <ClCompile Include="PublicKeyECCForm.cpp" />
+    <ClCompile Include="PublicKeyElGamalForm.cpp" />
+    <ClCompile Include="PublicKeyRSAForm.cpp" />
+    <ClCompile Include="SignatureDSAForm.cpp" />
+    <ClCompile Include="StreamRC4Form.cpp" />
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="BlockAESDialogChushi.cpp" />
+    <ClCompile Include="BlockAESDialogKey.cpp" />
+    <ClCompile Include="BlockAESDialogLun.cpp" />
+    <ClCompile Include="BlockAESDialogZuihou.cpp" />
+    <ClCompile Include="BlockIDEADialogKey.cpp" />
+    <ClCompile Include="BlockIDEADialogLun.cpp" />
+    <ClCompile Include="BlockIDEADialogZuihou.cpp" />
+    <ClCompile Include="Dialog.cpp" />
+    <ClCompile Include="StreamRC4DialogList.cpp" />
+    <ClCompile Include="StreamRC4DialogText.cpp" />
+    <ClCompile Include="RibbonBar.cpp" />
+    <ClCompile Include="RibbonButton.cpp" />
+    <ClCompile Include="CryptoAPIHash.cpp" />
+    <ClCompile Include="CStringConvert.cpp" />
+    <ClCompile Include="QRCodeEncode.cpp" />
+    <ClCompile Include="BlockAES.cpp" />
+    <ClCompile Include="BlockDES.cpp" />
+    <ClCompile Include="BlockIDEA.cpp" />
+    <ClCompile Include="ClassicDaihuan.cpp" />
+    <ClCompile Include="ClassicKaisa.cpp" />
+    <ClCompile Include="HashMD5.cpp" />
+    <ClCompile Include="PublicKeyECC.cpp" />
+    <ClCompile Include="PublicKeyElGamal.cpp" />
+    <ClCompile Include="PublicKeyRSA.cpp" />
+    <ClCompile Include="StreamRC4.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CryptCube.rc" _x007B_D27CDB6E-AE6D-11CF-96B8-444553540000_x007D_="CShockwaveflash1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

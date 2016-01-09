@@ -1,0 +1,821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="头文件\Form">
+      <UniqueIdentifier>{144db879-caac-409a-84e4-27647c3539ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Dialog">
+      <UniqueIdentifier>{40dda522-1b85-4600-ac0d-b7a0192346e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\GUI">
+      <UniqueIdentifier>{73997c0a-5d96-4237-ac22-06ebb0e23a0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Algorithm">
+      <UniqueIdentifier>{eb70b527-16ad-46aa-b4bd-621c26fecec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Crypt">
+      <UniqueIdentifier>{42b5727d-6d84-424b-8b71-fc0537b977ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\Form">
+      <UniqueIdentifier>{44535ac1-7b17-4f15-a1d1-3c51f8169d33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Dialog">
+      <UniqueIdentifier>{fe829c5c-e32e-42b3-938c-0539e5e150e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GUI">
+      <UniqueIdentifier>{4a46345f-8d68-48b2-a7a3-7c37cabb9e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Algorithm">
+      <UniqueIdentifier>{970fe459-a5a4-4f69-bf3e-493320d8e434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Crypt">
+      <UniqueIdentifier>{d01f5162-2363-4405-9c12-ea67ed30e319}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BookLesson.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CryptCube.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CryptCubeDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dictionary.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Euclid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Execise.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Flash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashAes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashAffine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashCarsa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashDes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashDiff.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashDsa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashEcc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashElg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashHmac.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashIdea.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashMd5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashPgp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashRc4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashSha.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlsahRsa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GF.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HighEfs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HighKerber.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HighOpen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HighPgp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HighPki.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QUICK_MOD.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="shockwaveflash1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestDes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestDiff.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestDsa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestHmac.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestMd5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestSsl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Theory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WeiClass.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XTIME.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockAESForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockDESForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockIDEAForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassicDaihuanForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassicKaisaForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeBase64Form.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCalcForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeColorForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeHashForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeQrForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeRandomForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeStringForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeUrlForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="CryptCubeForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="EncryptFileForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="EncryptStringForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="Form.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="HashMD5Form.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="HashSHAForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicKeyDHForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicKeyECCForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicKeyElGamalForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicKeyRSAForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="SignatureDSAForm.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamRC4Form.h">
+      <Filter>头文件\Form</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockAESDialogChushi.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockAESDialogKey.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockAESDialogLun.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockAESDialogZuihou.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockIDEADialogKey.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockIDEADialogLun.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockIDEADialogZuihou.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamRC4DialogList.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamRC4DialogText.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="RibbonBar.h">
+      <Filter>头文件\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="RibbonButton.h">
+      <Filter>头文件\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CryptoAPIHash.h">
+      <Filter>头文件\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="CStringConvert.h">
+      <Filter>头文件\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="QRCodeEncode.h">
+      <Filter>头文件\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockAES.h">
+      <Filter>头文件\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockDES.h">
+      <Filter>头文件\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockIDEA.h">
+      <Filter>头文件\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassicDaihuan.h">
+      <Filter>头文件\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassicKaisa.h">
+      <Filter>头文件\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="HashMD5.h">
+      <Filter>头文件\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicKeyECC.h">
+      <Filter>头文件\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicKeyElGamal.h">
+      <Filter>头文件\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicKeyRSA.h">
+      <Filter>头文件\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamRC4.h">
+      <Filter>头文件\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomButton.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinH.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HighFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HighSSL.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HighKer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectTerm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HashSum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FouDIG.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hashsha1sum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hashsha1lun.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hashsha1key.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HashSHA1.h">
+      <Filter>头文件\Crypt</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\background.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\密码术语\booklet.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CryptCube.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CryptCube.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CryptCubeDoc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\高级应用\ecel1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\高级应用\ecel2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\flash.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\help.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\helpsmall.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\IDEA1.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\IDEA2.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\可汗学院\khan图标.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\main.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\menu.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbar2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar2.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\算法原理\toolbar3.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\website.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\习题测试\习题.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\参考资料\参考.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="FlashIdea.htm" />
+    <None Include="FlashRsa.htm" />
+    <None Include="Readme.txt" />
+    <None Include="res\可汗学院\可汗&amp;资料.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\可汗学院\khan图标_副本.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\优秀作品\present.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\高级\high.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\高级应用\ss1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\高级应用\ss2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\参考资料\book.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\高级应用\EFS1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\高级应用\EFS2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\高级应用\EFS3.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\高级应用\EFS4.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\高级应用\EFS5.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar\Toolbar.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\menu\main.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\menu\menu.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar2\Toolbar2.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\IDEA\IDEA1.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\IDEA\IDEA2.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbar\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\高级\6.png">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CryptCube.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BookLesson.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CryptCube.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CryptCubeDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Euclid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Execise.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashAes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashAffine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashCarsa.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashDes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashDiff.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashDsa.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashEcc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashElg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashHmac.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashIdea.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashMd5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashPgp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashRc4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashSha.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlsahRsa.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GF.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HighEfs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HighKerber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HighOpen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HighPgp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HighPki.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QUICK_MOD.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="shockwaveflash1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDiff.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDsa.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestHmac.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMd5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSsl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Theory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WeiClass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XTIME.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockAESForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockDESForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockIDEAForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassicDaihuanForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassicKaisaForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeBase64Form.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCalcForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeColorForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeHashForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeQrForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeRandomForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeStringForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeUrlForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="CryptCubeForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="EncryptFileForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="EncryptStringForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="Form.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="HashMD5Form.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="HashSHAForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="PublicKeyDHForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="PublicKeyECCForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="PublicKeyElGamalForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="PublicKeyRSAForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="SignatureDSAForm.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamRC4Form.cpp">
+      <Filter>源文件\Form</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockAESDialogChushi.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockAESDialogKey.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockAESDialogLun.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockAESDialogZuihou.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockIDEADialogKey.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockIDEADialogLun.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockIDEADialogZuihou.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamRC4DialogList.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamRC4DialogText.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="RibbonBar.cpp">
+      <Filter>源文件\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="RibbonButton.cpp">
+      <Filter>源文件\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CryptoAPIHash.cpp">
+      <Filter>源文件\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="CStringConvert.cpp">
+      <Filter>源文件\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="QRCodeEncode.cpp">
+      <Filter>源文件\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockAES.cpp">
+      <Filter>源文件\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockDES.cpp">
+      <Filter>源文件\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockIDEA.cpp">
+      <Filter>源文件\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassicDaihuan.cpp">
+      <Filter>源文件\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassicKaisa.cpp">
+      <Filter>源文件\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="HashMD5.cpp">
+      <Filter>源文件\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="PublicKeyECC.cpp">
+      <Filter>源文件\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="PublicKeyElGamal.cpp">
+      <Filter>源文件\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="PublicKeyRSA.cpp">
+      <Filter>源文件\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamRC4.cpp">
+      <Filter>源文件\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="HighFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HighSSL.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HighKer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winmain.cpp">
+      <Filter>源文件\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectTerm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HashSum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FouDIG.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hashsha1sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hashsha1lun.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hashsha1key.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HashSHA1.cpp">
+      <Filter>源文件\Crypt</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
