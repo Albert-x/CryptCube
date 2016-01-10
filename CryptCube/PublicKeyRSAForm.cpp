@@ -291,9 +291,11 @@ void CPublicKeyRSAForm::DoRSA()
 	n =_ttoi(m_strComboP) * _ttoi(m_strComboQ);
 	UINT temp= (_ttoi(m_strComboP) - 1)* (_ttoi(m_strComboQ) - 1);
 	CreateD(e, temp, &d);
-
-
-
+	if (n<127)
+	{
+		MessageBox("pq的乘积应该大于127！");
+		return;
+	}
 
 	// 顶部公钥私钥展示
 	m_strPKe.Format(_T("%d"), e);

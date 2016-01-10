@@ -144,12 +144,27 @@ void CSignatureDSAForm::OnBnClickedButton8()
 		//m_sure=0;
 		return;
 	}
+	if (m_p < 4 || m_q < 4)
+	{
+		{
+			MessageBox("p、q为大于3的素数！");
+			//m_sure=0;
+			return;
+		}
+	}
 	if(0==m_pDSA->testprime(m_p))
 	{
 		MessageBox("p不是素数，请重新输入！");
 		//m_sure=0;
 		return;
 	}
+	if (0 == m_pDSA->testprime(m_q))
+	{
+		MessageBox("q不是素数，请重新输入！！");
+		//m_sure=0;
+		return;
+	}
+
 }
 void CSignatureDSAForm::OnBnClickedButton6()
 {
@@ -167,6 +182,11 @@ void CSignatureDSAForm::OnBnClickedButton3()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	UpdateData();
+	if (m_p == 0 || m_p == 1 || m_q == 0 || m_q == 1)
+	{
+		MessageBox("请输入素数p,q！");
+		return;
+	}
 	long temp1,temp2;
 	m_signG=m_g;
 	m_signK=m_k;
@@ -190,6 +210,11 @@ void CSignatureDSAForm::OnBnClickedButton7()
 	// TODO: 在此添加控件通知处理程序代码
 	long temp;
 	UpdateData();
+	if (m_p == 0 || m_p == 1 || m_q == 0 || m_q == 1)
+	{
+		MessageBox("请输入素数p,q！");
+		return;
+	}
 	m_wS=m_s;
 	m_wQ=m_q;
 	m_w=m_pDSA->modNUm(m_s,m_q);

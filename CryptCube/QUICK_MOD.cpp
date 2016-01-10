@@ -78,55 +78,61 @@ void QUICK_MOD::OnBnClickedShow()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	long a, b, m;
-	CString str1,str2,str3,str4;
-	CString str11,str33,str44;
-	str1="i   ";
-	str2="bi  ";
-	str3="a   ";
-	str4="A   ";
-	long A=1;
-	int i=0;
-	a=GetDlgItemInt(IDC_A);
-	b=GetDlgItemInt(IDC_B);
-	m=GetDlgItemInt(IDC_M);
-	if(a==0 ||b==0 || m==0)
+	CString str1, str2, str3, str4;
+	CString str11, str33, str44;
+	str1 = " i   ";
+	str2 = "bi   ";
+	str3 = " c   ";
+	str4 = " d   ";
+	int A = 1;
+	int i = 0;
+	a = GetDlgItemInt(IDC_A);
+	b = GetDlgItemInt(IDC_B);
+	m = GetDlgItemInt(IDC_M);
+	if (a == 0 || b == 0 || m == 0)
 	{
 		MessageBox("参数不完整，请输入参数！");
 		return;
 	}
-	while(b!=0)
+	int k = 0;
+	int s = 1;
+	while (b >= s)
 	{
-		if(b%2)
-		{
-			str2=str2+"1  ";
-
-			A=(A*a)%m;
-
-		}
-		else
-		{
-			str2=str2+"0  ";
-		}
-		a=(a*a)%m;
-		b=b>>1;
-		str11.Format("%d",i);
-		str33.Format("%d",a);
-		str44.Format("%d",A);
-		str1=str1+str11+"  ";
-		str3=str3+str33+"  ";
-		str4=str4+str44+"  ";
-		i++;
+		s = s * 2;
+		k++;
 	}
-	str1=str1+"\r\n\r\n";
-	str2=str2+"\r\n\r\n";
-	str3=str3+"\r\n\r\n";
-	str4=str4+"\t\n\r\n";
-
-
-
-	SetDlgItemText(IDC_P,str1+str2+str3+str4);
+	s = b;
+	while (b != 0)
+	{
+		for (int j = k; j >0; j--)
+		{
+			i = 2 * i;
+			A = (A*A) % m;
+			if ((s >> (j - 1)) & 1)
+			{
+				str2 = str2 + "1        ";
+				i++;
+				A = (A*a) % m;
+			}
+			else
+				str2 = str2 + "0        ";
+			str11.Format("%-9d", j - 1);
+			str33.Format("%-8d", i);
+			str44.Format("%-8d", A);
+			str1 = str1 + str11;
+			str3 = str3 + str33;
+			str4 = str4 + str44;
+			b = b >> 1;
+		}
+	}
+	str1 = str1 + "\r\n\r\n";
+	str2 = str2 + "\r\n\r\n";
+	str3 = str3 + "\r\n\r\n";
+	str4 = str4 + "\r\n\r\n";
+	SetDlgItemText(IDC_P, str1 + str2 + str3 + str4);
 
 }
+
 
 void QUICK_MOD::OnBnClickedRep()
 {

@@ -194,11 +194,9 @@ CString Text2Utf7(const CString &strText)
 CString Text2Base64(const CString &strText)
 {
 	const char EncodeTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
-	//CString strTextA = Text2Utf8(strText);
 	CStringW strTextW = CStrT2CStrW(strText);
 	CString strResultB;
 	int strTextLenth = WideCharToMultiByte(CP_UTF8, 0, LPCWSTR(strTextW), -1, NULL, 0, NULL, NULL);
-	//int strTextLenth = strTextA.GetLength();
 	char *str = new char[strTextLenth];
 	memset(str, 0, strTextLenth);
 	WideCharToMultiByte(CP_UTF8, 0, LPCWSTR(strTextW), -1, str, strTextLenth, NULL, NULL);
