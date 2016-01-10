@@ -193,28 +193,46 @@ CString Text2Utf7(const CString &strText)
 
 CString Text2Base64(const CString &strText)
 {
+	//BASE64编码转换数组
 	const char EncodeTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+
+	//将原始文本改为宽字符
 	CStringW strTextW = CStrT2CStrW(strText);
+
 	CString strResultB;
+	//预计算宽字符转换成UFT-8需要的字符长度
 	int strTextLenth = WideCharToMultiByte(CP_UTF8, 0, LPCWSTR(strTextW), -1, NULL, 0, NULL, NULL);
+
+	//动态生成str数组用于存放转换后的UFT-8字符串
 	char *str = new char[strTextLenth];
 	memset(str, 0, strTextLenth);
+
+	//将Unicode的源字符串转换成Utf8编码方式的ANSI类型字符串
 	WideCharToMultiByte(CP_UTF8, 0, LPCWSTR(strTextW), -1, str, strTextLenth, NULL, NULL);
+
+	//重新计算str中字符长度
 	strTextLenth = strlen(str);
+
+	///////////////////////////BASE64编码///////////////////////////
 	unsigned char Tmp[4] = { 0 };
 	int Length = 0, count = 0;
-	for (int i = 0; i<(int)(strTextLenth / 3); i++)
+	for (int i = 0; i<(strTextLenth / 3); i++)
 	{
 		Tmp[1] = str[Length++];
 		Tmp[2] = str[Length++];
 		Tmp[3] = str[Length++];
+
+		//二进制位移动、合并，保存
 		strResultB += EncodeTable[Tmp[1] >> 2];
 		strResultB += EncodeTable[((Tmp[1] << 4) | (Tmp[2] >> 4)) & 0x3F];
 		strResultB += EncodeTable[((Tmp[2] << 2) | (Tmp[3] >> 6)) & 0x3F];
 		strResultB += EncodeTable[Tmp[3] & 0x3F];
+
+		//字符长度每超过76位即插入一次换行符。（RFC3548标准）
 		if (count += 4, count == 76) { strResultB += "\r\n"; count = 0; }
 	}
 
+	//编码长度不足4的倍数，末尾补"="
 	int Mod = strTextLenth % 3;
 	if (Mod == 1)
 	{
@@ -232,6 +250,10 @@ CString Text2Base64(const CString &strText)
 		strResultB += EncodeTable[(Tmp[2] << 2) & 0x3C];
 		strResultB += "=";
 	}
+
+	//销毁中间字符串
+	delete[] str;
+
 	return strResultB;
 }
 
