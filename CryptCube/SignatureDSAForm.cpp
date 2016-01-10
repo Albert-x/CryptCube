@@ -171,6 +171,14 @@ void CSignatureDSAForm::OnBnClickedButton6()
 	// TODO: 在此添加控件通知处理程序代码
 	//m_pECC = new ECC();
 	UpdateData();
+	if (m_p < 4 || m_q < 4)
+	{
+		{
+			MessageBox("p、q为大于3的素数！");
+			//m_sure=0;
+			return;
+		}
+	}
 	m_gg=m_g;
 	m_xx=m_x;
 	m_qq=m_q;
